@@ -1,56 +1,73 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>求职自我介绍</title>
+    <title>Arlen Kang's Profile</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { width: 80%; margin: 0 auto; }
-        header, footer { text-align: center; padding: 2em 0; }
-        section { margin-bottom: 2em; }
-        h2 { color: #007BFF; }
+        /* 可以在这里添加CSS样式 */
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>我的自我介绍</h1>
-        </header>
-
-        <section>
-            <h2>个人信息</h2>  
-            <p><img src="me.jpg" style="float:right;width:84px;height:84px;">姓名：康浩岚</p>  
-            
-
-
-            <p>职业目标：嵌入式软件工程师</p>  
-            <p>邮箱：zhangsan@example.com</p>
-            <p>电话：123-456-7890</p>
-        </section>
-
-        <section>
-            <h2>经历</h2>
-            <p>在XX公司担任前端开发工程师，负责网站的前端设计和开发，优化页面响应时间和用户体验。</p>
-        </section>
-
-        <section>
-            <h2>技能</h2>
-            <ul>
-                <li>熟练掌握HTML, CSS, JavaScript</li>
-                <li>熟悉Vue.js和React框架</li>
-                <li>良好的团队合作能力和沟通技巧</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>教育背景</h2>
-            <p>XXXX大学 计算机科学与技术 学士学位</p>
-        </section>
-
-        <footer>
-            <p>感谢您访问我的个人介绍网站，期待与您的合作。</p>
-        </footer>
-    </div>
+    <table style="width:100%; max-width:800px; border:0; border-spacing:0; border-collapse:separate; margin:0 auto;">
+        <tbody>
+            <tr>
+                <td>
+                    <table style="width:100%; border:0; border-spacing:0; border-collapse:separate; margin:0 auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:2.5%; width:63%; vertical-align:middle; text-align:center;">
+                                    <h2 class="name">Arlen Kang</h2>
+                                    <p>I'm a research scientist at Google Research in San Francisco, where I lead a small team that mostly works on NeRF.</p>
+                                </td>
+                                <td style="padding:2.5%; width:40%; max-width:40%;">
+                                    <a href="20240213220348.png">
+                                        <img style="width:100%; max-width:100%; object-fit:cover; border-radius:50%;" alt="profile photo" src="me.jpg" class="hoverZoomLink">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%; border:0; border-spacing:0; border-collapse:separate; margin:0 auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px; width:100%; vertical-align:middle;">
+                                    <h2>Research</h2>
+                                    <p>I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Representative papers are <span class="highlight">highlighted</span>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%; border:0; border-spacing:0; border-collapse:separate; margin:0 auto;">
+                        <tbody>
+                            <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+                                <td style="padding:20px; width:25%; vertical-align:middle;">
+                                    <div class="one">
+                                        <div class="two" id="smerf_image">
+                                            <video width="100%" muted autoplay loop>
+                                                <source src="images/smerf.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <img src="me.jpg" width="100%">
+                                    </div>
+                                </td>
+                                <td style="padding:20px; width:75%; vertical-align:middle;">
+                                    <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+                                    <br>
+                                    <strong>Jonathan T. Barron</strong>
+                                    <br><br>
+                                    <em>arXiv</em>, 2023
+                                    <br>
+                                    <a href="https://smerf-3d.github.io/">project page</a> /
+                                    <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a> /
+                                    <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+                                    <p>Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
